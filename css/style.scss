@@ -27,6 +27,19 @@ body {
 	padding-right: calc(50% - 600px);
 }
 
+.title {
+	font-weight: 700;
+	font-size: 4rem;
+	line-height: 78px;
+}
+
+.desc {
+	font-size: 1.5rem;
+	margin-top: 24px;
+	line-height: 32px;
+	max-width: 766px;
+}
+
 // *===========================================================================================
 .header {
 	background-color: #E1FF8F;
@@ -37,18 +50,6 @@ body {
 		padding: 196px 0 156px 0;
 		display: flex;
 		flex-direction: column;
-	}
-
-	&__title {
-		font-weight: 700;
-		font-size: 4rem;
-		line-height: 78px;
-	}
-
-	&__desc {
-		font-size: 1.5rem;
-		margin-top: 24px;
-		line-height: 32px;
 	}
 
 	&__btn {
@@ -90,6 +91,59 @@ body {
 			background-size: contain;
 			background-position: center;
 			display: block;
+		}
+	}
+}
+
+.main {
+	background-color: #202027;
+
+	.about {
+
+
+
+		&__header {
+			display: flex;
+			flex-direction: column;
+			color: #ffffff;
+		}
+
+
+		&__body {
+			display: inline-block;
+			width: 378px;
+			height: 473px;
+			border-radius: 30px;
+			background-color: #ffffff;
+			overflow: hidden;
+		}
+
+		&__img {
+			max-width: 100%;
+			transform-origin: center;
+			transform: scale(var(--img-scale));
+			transition: transform 0.4s ease-in-out;
+		}
+
+
+		&__card-btn {
+			width: 108px;
+			height: 36px;
+			margin: 32px 32px 16px 32px;
+			padding: 8px 16px 10px 16px;
+			border-radius: 52.58px;
+			line-height: 110%;
+			background: #f7f7f7;
+			font-weight: 500;
+			text-align: center;
+		}
+
+		&__title {
+			white-space: wrap;
+			margin: 0 32px 16px 32px;
+			font-size: 2rem;
+			font-weight: 700;
+			line-height: 39px;
 		}
 	}
 }
