@@ -121,6 +121,9 @@ body {
 	background-color: #202027;
 
 	.about {
+		background-image: url("/img/svg/star-about.svg");
+		background-position: calc(50% + 80px) calc(50% - 250px);
+		background-repeat: no-repeat;
 
 		&__header {
 			padding-top: 94px;
@@ -135,6 +138,7 @@ body {
 			align-items: start;
 			gap: 32px;
 			margin-top: 72px;
+			margin-bottom: 50px;
 		}
 
 		&__card {
@@ -184,7 +188,12 @@ body {
 
 	.mini {
 		padding-top: 46px;
-		padding-bottom: 114px;
+		padding-bottom: 144px;
+		border-top: 1px solid rgba(188, 236, 48, 0.2);
+		background-image: url("/img/svg/star-top.svg"), url("/img/svg/star-bottom.svg");
+		background-repeat: no-repeat;
+		background-position: calc(100% - 45px) calc(0% - -93px), calc(100% - 52px) calc(100% - 45px);
+
 
 		&__cards {
 			display: grid;
