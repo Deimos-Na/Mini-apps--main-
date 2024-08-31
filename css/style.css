@@ -210,48 +210,41 @@ body {
   gap: 32px;
   margin-top: 72px;
 }
-.main .about .section-cards-down {
-  display: grid;
-  grid-template-columns: repeat(3, 378px);
-  gap: 32px;
-  align-items: flex-end;
-  justify-items: center;
-  padding-bottom: 50px;
-}
 .main .about__card {
   width: 378px;
   min-height: 473px;
   border-radius: 30px;
   background-color: #ffffff;
   overflow: hidden;
+  transition: 0.5s;
 }
-.main .about__card:nth-child(2) {
+.main .about__card:hover {
+  transform: scale(1.02);
+}
+.main .about__card:nth-child(2), .main .about__card:nth-child(5) {
   min-height: 512px;
+  align-self: flex-end;
 }
-.main .about__card--4 {
+.main .about__card:nth-child(4), .main .about__card:nth-child(6) {
   min-height: 551px;
 }
-.main .about__body {
-  display: block;
-  height: inherit;
-}
-.main .about__card-btn {
-  max-width: 108px;
-  height: 36px;
-  margin: 32px 32px 16px 32px;
-  padding: 8px 16px 10px 16px;
-  border-radius: 52.58px;
-  line-height: 110%;
-  background: #f7f7f7;
-  font-weight: 500;
-  text-align: center;
-}
-.main .about__title {
+.main .about__card-title {
   white-space: wrap;
   margin: 0 32px 0 32px;
   font-size: 2rem;
   font-weight: 700;
   line-height: 39px;
+}
+.main .about__card-btn {
+  width: 108px;
+  height: 36px;
+  margin: 32px 32px 16px 32px;
+  padding: 10px 0;
+  border-radius: 52.58px;
+  line-height: 110%;
+  background: #f7f7f7;
+  font-weight: 500;
+  text-align: center;
 }
 .main .mini {
   padding-top: 46px;
