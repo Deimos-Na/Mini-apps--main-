@@ -6,13 +6,15 @@ body {
 }
 
 .button {
+	width: 247px;
+	height: 66px;
 	border-radius: 60px;
 	font-weight: 600;
 	font-size: 1.5rem;
 	color: #ffffff;
 	background-color: #202027;
-	padding: 20px 65px;
-	margin-top: 64px;
+	text-align: center;
+	padding: 20px 0;
 	transition: 0.3s;
 
 	&:hover {
@@ -31,6 +33,10 @@ body {
 	font-weight: 700;
 	font-size: 4rem;
 	line-height: 78px;
+
+	&-section {
+		color: #ffffff;
+	}
 }
 
 .desc {
@@ -38,6 +44,10 @@ body {
 	margin-top: 24px;
 	line-height: 32px;
 	max-width: 766px;
+
+	&-section {
+		color: #ffffff;
+	}
 }
 
 // *===========================================================================================
@@ -52,10 +62,11 @@ body {
 		flex-direction: column;
 	}
 
-	&__btn {
-		width: 247px;
-		height: 66px;
+	.box-title {
+		margin-bottom: 64px;
 	}
+
+	&__btn {}
 
 	&__nav {
 		background-color: #BCEC30;
@@ -100,18 +111,15 @@ body {
 
 	.about {
 
-
-
 		&__header {
 			padding-top: 94px;
 			display: flex;
 			flex-direction: column;
-			color: #ffffff;
 		}
 
 		.section-cards {
 			display: grid;
-			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-columns: repeat(3, 1fr);
 			justify-items: center;
 			align-items: start;
 			gap: 32px;
@@ -124,6 +132,7 @@ body {
 			gap: 32px;
 			align-items: flex-end;
 			justify-items: center;
+			padding-bottom: 50px;
 		}
 
 		&__card {
@@ -147,14 +156,6 @@ body {
 			height: inherit;
 		}
 
-		// &__img {
-		// 	max-width: 100%;
-		// 	transform-origin: center;
-		// 	transform: scale(var(--img-scale));
-		// 	transition: transform 0.4s ease-in-out;
-		// }
-
-
 		&__card-btn {
 			max-width: 108px;
 			height: 36px;
@@ -173,6 +174,52 @@ body {
 			font-size: 2rem;
 			font-weight: 700;
 			line-height: 39px;
+		}
+	}
+
+	.mini {
+		padding-top: 46px;
+		padding-bottom: 114px;
+
+		&__cards {
+			display: grid;
+			grid-template-columns: 1fr;
+			row-gap: 32px;
+			padding-top: 72px;
+		}
+
+		&__card {
+			width: 100%;
+			height: 500px;
+			background-color: #ffffff;
+			border-radius: 20px;
+		}
+
+		&__card {
+			display: flex;
+			overflow: hidden;
+			gap: 3px;
+
+			&:nth-child(even) {
+				flex-direction: row-reverse;
+			}
+
+			&-content {
+				padding: 48px;
+				grid-column: 1 / 7;
+				display: flex;
+				flex-direction: column;
+			}
+
+			&-title {
+				font-weight: 700;
+				font-size: 48px;
+			}
+
+			&-desc {
+				font-size: 24px;
+				padding: 24px 0 36px 0;
+			}
 		}
 	}
 }
