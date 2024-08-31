@@ -103,31 +103,60 @@ body {
 
 
 		&__header {
+			padding-top: 94px;
 			display: flex;
 			flex-direction: column;
 			color: #ffffff;
 		}
 
+		.section-cards {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			justify-items: center;
+			align-items: start;
+			gap: 32px;
+			margin-top: 72px;
+		}
 
-		&__body {
-			display: inline-block;
+		.section-cards-down {
+			display: grid;
+			grid-template-columns: repeat(3, 378px);
+			gap: 32px;
+			align-items: flex-end;
+			justify-items: center;
+		}
+
+		&__card {
 			width: 378px;
-			height: 473px;
+			min-height: 473px;
 			border-radius: 30px;
 			background-color: #ffffff;
 			overflow: hidden;
+
+			&:nth-child(2) {
+				min-height: 512px;
+			}
+
+			&--4 {
+				min-height: 551px;
+			}
 		}
 
-		&__img {
-			max-width: 100%;
-			transform-origin: center;
-			transform: scale(var(--img-scale));
-			transition: transform 0.4s ease-in-out;
+		&__body {
+			display: block;
+			height: inherit;
 		}
+
+		// &__img {
+		// 	max-width: 100%;
+		// 	transform-origin: center;
+		// 	transform: scale(var(--img-scale));
+		// 	transition: transform 0.4s ease-in-out;
+		// }
 
 
 		&__card-btn {
-			width: 108px;
+			max-width: 108px;
 			height: 36px;
 			margin: 32px 32px 16px 32px;
 			padding: 8px 16px 10px 16px;
@@ -140,7 +169,7 @@ body {
 
 		&__title {
 			white-space: wrap;
-			margin: 0 32px 16px 32px;
+			margin: 0 32px 0 32px;
 			font-size: 2rem;
 			font-weight: 700;
 			line-height: 39px;
