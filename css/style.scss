@@ -222,4 +222,18 @@ body {
 			}
 		}
 	}
+
+
+}
+
+.footer {
+	height: 150px;
+	background-color: #BDED35;
+
+	&__info {
+		padding-top: 64px;
+		text-align: center;
+		font-size: 1.5rem;
+		font-weight: 600;
+	}
 }
