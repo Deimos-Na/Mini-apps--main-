@@ -1,2 +1,2 @@
-let iphone = 2007
-alert(iphone)
+let a = 10
+alert(a)
