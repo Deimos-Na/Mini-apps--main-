@@ -1,2 +1,2 @@
-let iphone = 2007
-alert(iphone)
+let nameJS = 'Брендан Эйк'
+alert(nameJS)
