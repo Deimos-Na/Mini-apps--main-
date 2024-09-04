@@ -137,7 +137,6 @@ body {
 }
 
 .header {
-  margin-bottom: 90px;
   max-height: 800px;
   background-color: #E1FF8F;
 }
@@ -303,4 +302,54 @@ body {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header {
+    height: 700px;
+    margin-bottom: 0;
+  }
+  .header .top .header__container {
+    align-items: center;
+    padding-block: 144px 94px;
+    overflow: hidden;
+  }
+  .header .top .header__container .box-title .title {
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+  }
+  .header .top .header__container .box-title .desc {
+    font-size: 1rem;
+    line-height: 20px;
+    text-align: center;
+  }
+  .header .top .header__container .header__btn {
+    width: 285px;
+    height: 55px;
+    font-size: 1rem;
+  }
+  .header__nav {
+    width: 1717px;
+    height: 52px;
+    position: relative;
+  }
+  .header__nav .header__list {
+    -moz-column-gap: 27px;
+         column-gap: 27px;
+  }
+  .header__nav .header__list .header__item {
+    -moz-column-gap: 27px;
+         column-gap: 27px;
+  }
+  .header__nav .header__list .header__item > a {
+    font-size: 16px;
+  }
+  .header__nav .header__list .header__item > span {
+    width: 19px;
+  }
 }/*# sourceMappingURL=style.css.map */
