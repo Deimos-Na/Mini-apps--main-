@@ -81,7 +81,6 @@ body {
 		height: 90px;
 		display: flex;
 		align-items: center;
-		position: absolute;
 		left: 0;
 	}
 
@@ -193,12 +192,12 @@ body {
 		background-repeat: no-repeat;
 		background-position: calc(100% - 45px) calc(0% - -93px), calc(100% - 52px) calc(100% - 45px);
 
-
 		&__cards {
 			display: grid;
 			grid-template-columns: 1fr;
 			row-gap: 32px;
 			padding-top: 72px;
+
 		}
 
 		&__card {
@@ -224,7 +223,7 @@ body {
 			&-title {
 				font-weight: 700;
 				font-size: 48px;
-				width: 450px;
+				max-width: 450px;
 			}
 
 			&-desc {
@@ -247,4 +246,5 @@ body {
 	}
 }
 
-@import "mobile"
+@import "tabel";
+@import "mobile";
