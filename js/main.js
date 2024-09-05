@@ -1,4 +1,5 @@
 // let a = 10
+// a = 20
 // alert(a)
 
 // let iphone = 2007
@@ -42,12 +43,12 @@
 // let userName = prompt('Ваше имя?')
 // alert(`Привет, ${userName}`)
 
-let number = prompt('Загадайте любое число')
-let numberQ = number * 2
-alert(numberQ)
-let numberW = numberQ + 10
-alert(numberW)
-let numberE = numberW / 2
-alert(numberE)
-let numberItog = numberE - number
-alert(numberItog)
+// let number = prompt('Загадайте любое число')
+// let numberQ = number * 2
+// alert(numberQ)
+// let numberW = numberQ + 10
+// alert(numberW)
+// let numberE = numberW / 2
+// alert(numberE)
+// let numberItog = numberE - number
+// alert(numberItog)
