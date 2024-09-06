@@ -1,0 +1,137 @@
+@media (max-width: 768px) {
+
+	.center {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+	.button {
+		width: 17.812rem;
+		height: 3.437rem;
+		font-size: 1rem;
+
+		&:hover {
+			color: #ffffff;
+			border: inherit;
+			background-color: #202027;
+		}
+	}
+
+	.header {
+		height: 700px;
+		margin-bottom: 0;
+		background-image: url("/img/svg/starmobile1.svg"), url("/img/svg/starmobile2.svg"), url("/img/svg/starmobile3.svg");
+		background-position: calc(100% + 90px) calc(0% - 80px), calc(10%) calc(10%), calc(90%) calc(85%);
+		background-repeat: no-repeat;
+
+		.center {
+			background-image: none;
+		}
+
+		.header__container {
+			align-items: center;
+			padding-block: 144px 94px;
+			overflow: hidden;
+
+			.box-title {
+				max-width: 497px;
+
+
+				.title {
+					font-size: 2.5rem;
+					line-height: 49px;
+					text-align: center;
+				}
+
+				.desc {
+					font-size: 1rem;
+					line-height: 20px;
+					text-align: center;
+				}
+
+
+			}
+		}
+	}
+
+
+
+	.header__nav {
+		max-width: 1717px;
+		height: 52px;
+
+		overflow: hidden;
+
+		.header__list {
+			column-gap: 27px;
+
+			.header__item {
+				column-gap: 27px;
+
+				&>a {
+					font-size: 1rem;
+				}
+
+				&>span {
+					width: 19px;
+				}
+			}
+		}
+	}
+
+
+	.main {
+		.about {
+			display: none;
+		}
+
+		.mini {
+			padding-block: 48px;
+			background-image: none;
+
+			.title-section {
+				font-size: 2.5rem;
+				line-height: 49px;
+			}
+
+			.mini__cards {
+				padding-top: 48px;
+				row-gap: 24px;
+
+				.mini__card {
+					flex-direction: column-reverse;
+					min-width: 340px;
+					height: 567px;
+					justify-content: space-between;
+
+					&:nth-child(even) {
+						flex-direction: column-reverse;
+					}
+
+					.mini__card-content {
+						padding: 30px;
+
+						.mini__card-title {
+							display: block;
+							font-size: 2rem;
+						}
+
+						.mini__card-desc {
+							font-size: 1rem;
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+	.footer {
+		height: 100px;
+
+		.footer__info {
+			font-size: 1rem;
+			padding-block: 40px;
+		}
+	}
+}

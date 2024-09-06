@@ -6,8 +6,8 @@ body {
 }
 
 .button {
-	width: 247px;
-	height: 66px;
+	width: 15.437rem;
+	height: 4.125rem;
 	border-radius: 60px;
 	font-weight: 600;
 	font-size: 1.5rem;
@@ -52,12 +52,11 @@ body {
 
 // *===========================================================================================
 .header {
-	margin-bottom: 90px;
 	max-height: 800px;
 	background-color: #E1FF8F;
 
 	.center {
-		background-image: url("/img/svg/star-header.svg");
+		background-image: url("../img/svg/star-header.svg");
 		background-position: center;
 		background-position: calc(50% - -260px) calc(50% - 130px);
 		background-repeat: no-repeat;
@@ -78,12 +77,12 @@ body {
 		background-color: #BCEC30;
 		// временный падинг
 		padding-left: 20px;
-		width: 3220px;
+		max-width: 3220px;
 		height: 90px;
 		display: flex;
 		align-items: center;
-		position: absolute;
 		left: 0;
+		overflow: hidden;
 	}
 
 	&__list {
@@ -105,7 +104,7 @@ body {
 
 		&>span {
 			content: "";
-			background-image: url("/img/svg/Star.svg");
+			background-image: url("../img/svg/Star.svg");
 			right: 10px;
 			width: 36px;
 			height: 36px;
@@ -121,7 +120,7 @@ body {
 	background-color: #202027;
 
 	.about {
-		background-image: url("/img/svg/star-about.svg");
+		background-image: url("../img/svg/star-about.svg");
 		background-position: calc(50% + 80px) calc(50% - 250px);
 		background-repeat: no-repeat;
 
@@ -190,16 +189,16 @@ body {
 		padding-top: 46px;
 		padding-bottom: 144px;
 		border-top: 1px solid rgba(188, 236, 48, 0.2);
-		background-image: url("/img/svg/star-top.svg"), url("/img/svg/star-bottom.svg");
+		background-image: url("../img/svg/star-top.svg"), url("../img/svg/star-bottom.svg");
 		background-repeat: no-repeat;
-		background-position: calc(100% - 45px) calc(0% - -93px), calc(100% - 52px) calc(100% - 45px);
-
+		background-position: calc(100%) calc(3%), calc(99%) calc(99%);
 
 		&__cards {
 			display: grid;
 			grid-template-columns: 1fr;
 			row-gap: 32px;
 			padding-top: 72px;
+
 		}
 
 		&__card {
@@ -224,12 +223,12 @@ body {
 
 			&-title {
 				font-weight: 700;
-				font-size: 48px;
-				width: 450px;
+				font-size: 3rem;
+				max-width: 450px;
 			}
 
 			&-desc {
-				font-size: 24px;
+				font-size: 1.5rem;
 				padding: 24px 0 36px 0;
 			}
 		}
@@ -247,3 +246,6 @@ body {
 		font-weight: 600;
 	}
 }
+
+@import "tabel";
+@import "mobile";
