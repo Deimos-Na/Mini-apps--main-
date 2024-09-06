@@ -6,7 +6,7 @@
 	}
 
 	.button {
-		width: 17.812rem;
+		max-width: 17.812rem;
 		height: 3.437rem;
 		font-size: 1rem;
 
@@ -23,6 +23,10 @@
 		background-image: url("/img/svg/starmobile1.svg"), url("/img/svg/starmobile2.svg"), url("/img/svg/starmobile3.svg");
 		background-position: calc(100% + 90px) calc(0% - 80px), calc(10%) calc(10%), calc(90%) calc(85%);
 		background-repeat: no-repeat;
+
+		&__btn {
+			min-width: 17.812rem;
+		}
 
 		.center {
 			background-image: none;
@@ -56,16 +60,16 @@
 
 
 
-	.header__nav {
+	.nav {
 		max-width: 1717px;
 		height: 52px;
 
 		overflow: hidden;
 
-		.header__list {
+		.nav__list {
 			column-gap: 27px;
 
-			.header__item {
+			.nav__item {
 				column-gap: 27px;
 
 				&>a {
@@ -100,7 +104,6 @@
 
 				.mini__card {
 					flex-direction: column-reverse;
-					min-width: 340px;
 					height: 567px;
 					justify-content: space-between;
 

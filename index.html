@@ -21,34 +21,34 @@
               нажимай <b>«Поехали!»</b> и <b>приступай.</b>
             </div>
           </div>
-          <a class="button header__btn" href="#go">Поехали!</a>
+          <a class="button header__btn" href="#go" >Поехали!</a>
         </div>
       </div>
     </header>
-    <nav class="header__nav">
-      <ul class="header__list">
-        <li class="header__item">
-          <a class="header__link-app" href="#">ВИКТОРИНА</a>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link-app" href="#">ВИКТОРИНА</a>
           <span></span>
         </li>
-        <li class="header__item">
-          <a class="header__link-app" href="#">УГАДАЙ ЧИСЛО</a>
+        <li class="nav__item">
+          <a class="nav__link-app" href="#">УГАДАЙ ЧИСЛО</a>
           <span></span>
         </li>
-        <li class="header__item">
-          <a class="header__link-app" href="#">ПЕРЕВЕРНИ ТЕКСТ</a>
+        <li class="nav__item">
+          <a class="nav__link-app" href="#">ПЕРЕВЕРНИ ТЕКСТ</a>
           <span></span>
         </li>
-        <li class="header__item">
-          <a class="header__link-app" href="#">ПРОСТАЯ АРИФМЕТИКА</a>
+        <li class="nav__item">
+          <a class="nav__link-app" href="#">ПРОСТАЯ АРИФМЕТИКА</a>
           <span></span>
         </li>
-        <li class="header__item">
-          <a class="header__link-app" href="#">КАМЕНЬ, НОЖНИЦЫ, БУМАГА</a>
+        <li class="nav__item">
+          <a class="nav__link-app" href="#">КАМЕНЬ, НОЖНИЦЫ,БУМАГА</a>
           <span></span>
         </li>
-        <li class="header__item">
-          <a class="header__link-app" href="#">ГЕНЕРАТОР СЛУЧАЙНЫХ ЦВЕТОВ</a>
+        <li class="nav__item">
+          <a class="nav__link-app" href="#">ГЕНЕРАТОР СЛУЧАЙНЫХЦВЕТОВ</a>
           <span></span>
         </li>
       </ul>
@@ -69,43 +69,55 @@
           <article class="about__card">
             <a class="about__card-body" href="#game1">
               <img class="about__img" src="./img/about/2.jpeg" alt="Игра №1" />
-              <p class="about__card-btn">Игра №1</p>
-              <h2 class="about__card-title">Угадай число</h2>
+              <div class="about__card-box">
+                <p class="about__card-btn">Игра №1</p>
+                <h2 class="about__card-title">Угадай число</h2>
+              </div>
             </a>
           </article>
           <article class="about__card">
             <a class="about__card-body" href="#game2">
               <img class="about__img" src="./img/about/1.jpeg" alt="Игра №2" />
-              <p class="about__card-btn">Игра №2</p>
-              <h2 class="about__card-title">Простая арифметика</h2>
+              <div class="about__card-box">
+                <p class="about__card-btn">Игра №2</p>
+                <h2 class="about__card-title">Простая арифметика</h2>
+              </div class="about__card-box">
             </a>
           </article>
           <article class="about__card">
             <a class="about__card-body" href="#game3">
               <img class="about__img" src="./img/about/3.jpeg" alt="Игра №3" />
-              <p class="about__card-btn">Игра №3</p>
-              <h2 class="about__card-title">Переверни текст</h2>
+              <div class="about__card-box">
+                <p class="about__card-btn">Игра №3</p>
+                <h2 class="about__card-title">Переверни текст</h2>
+              </div>
             </a>
           </article>
           <article class="about__card">
             <a class="about__card-body" href="#game4">
               <img class="about__img" src="./img/about/4.jpeg" alt="Игра №4" />
-              <p class="about__card-btn">Игра №4</p>
-              <h2 class="about__card-title">Камень, ножницы, бумага</h2>
+              <div class="about__card-box">
+                <p class="about__card-btn">Игра №4</p>
+                <h2 class="about__card-title">Камень, ножницы, бумага</h2>
+              </div>
             </a>
           </article>
           <article class="about__card">
             <a class="about__card-body" href="#game5">
               <img class="about__img" src="./img/about/5.jpeg" alt="Игра №5" />
-              <p class="about__card-btn">Игра №5</p>
-              <h2 class="about__card-title">Простая викторина</h2>
+              <div class="about__card-box">
+                <p class="about__card-btn">Игра №5</p>
+                <h2 class="about__card-title">Простая викторина</h2>
+              </div>
             </a>
           </article>
           <article class="about__card">
             <a class="about__card-body" href="#game6">
               <img class="about__img" src="./img/about/6.jpeg" alt="Игра №6" />
-              <p class="about__card-btn">Игра №6</p>
-              <h2 class="about__card-title">Генератор случайных цветов</h2>
+              <div class="about__card-box">
+                <p class="about__card-btn">Игра №6</p>
+                <h2 class="about__card-title">Генератор случайных цветов</h2>
+              </div>
             </a>
           </article>
         </div>
@@ -121,7 +133,10 @@
               </p>
               <a class="button mini__card-btn" href="#">Играть!</a>
             </div>
-            <img src="./img/mini/1.jpeg" alt="Угадай число" />
+            <img
+              src="./img/mini/1.jpeg"
+              alt="Угадай число"
+                          />
           </article>
           <article class="mini__card" id="game2">
             <div class="mini__card-content">
@@ -180,6 +195,5 @@
     <footer class="footer">
       <h4 class="footer__info">Все права защищены.</h4>
     </footer>
-    <script src="./js/main.js"></script>
   </body>
 </html>
