@@ -16,6 +16,7 @@
 			.section-cards {
 				grid-template-columns: repeat(2, 1fr);
 				align-items: stretch;
+				row-gap: 32px;
 
 				.about__card {
 					align-self: stretch;
@@ -23,7 +24,6 @@
 
 					.about__card-body {
 						display: block;
-						// padding-bottom: 30px;
 
 						&>img {
 							width: 100%;
