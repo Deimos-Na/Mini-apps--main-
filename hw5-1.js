@@ -1,8 +1,7 @@
 function fun(z, x) {
   if (z > x) {
     return z
-  } else z < x
-  return x
+  } else return x
 }
 
 let result = fun(8, 9)

@@ -1,5 +1,5 @@
 function num() {
-  playerNumber = +prompt('Введи число')
+  let playerNumber = +prompt('Введи число')
 
   if (isNaN(playerNumber)) {
     alert('Переданный параметр не является числом!')
