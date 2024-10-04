@@ -7,7 +7,7 @@ function onClickRandom() {
 
     if (playerNumber === 0 || isNaN(playerNumber)) {
       if (playerNumber === 0) {
-        alert('Игра завершена!')
+        alert('Досвидули!')
         break
       }
       alert('Введи число!')
@@ -110,4 +110,52 @@ function quiz() {
 
 //Камень, ножницы, бумага
 
+function gameRockPaperScissors() {
+  const option = ['камень', 'ножницы', 'бумага']
+
+  while (true) {
+    const userInput = prompt('1.камень, 2.ножницы или 3.бумага?').toLowerCase()
+
+    let userChoice
+
+    if (userInput === '1') {
+      userChoice = 'камень'
+    } else if (userInput === '2') {
+      userChoice = 'ножницы'
+    } else if (userInput === '3') {
+      userChoice = 'бумага'
+    } else if (option.includes(userInput)) {
+      userChoice = userInput
+    } else {
+      alert('Некорректный выбор')
+      continue
+    }
+
+    const computerChoice = option[Math.floor(Math.random() * option.length)]
+
+    let result
+    if (userChoice === computerChoice) {
+      result = 'Ничья!'
+    } else if (
+      (userChoice === 'камень' && computerChoice === 'ножницы') ||
+      (userChoice === 'ножницы' && computerChoice === 'бумага') ||
+      (userChoice === 'бумага' && computerChoice === 'камень')
+    ) {
+      result = 'Ты выиграл'
+    } else {
+      result = 'Ты проиграл'
+    }
+
+    alert(`${result}
+      Ты выбрал: ${userChoice}
+      Я выбрал: ${computerChoice}
+      `)
+
+    const againGame = confirm('Продолжим?')
+    if (!againGame) {
+      alert('Досвидули)')
+      break
+    }
+  }
+}
 //Генератор случайных чисел
